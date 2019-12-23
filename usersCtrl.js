@@ -98,7 +98,7 @@ module.exports = {
 
     addUser: (req, res) => {
         let newUser = req.body
-        let counter = userData[userData.length - 1].id + 1
+        let counter = userData[userData.length].id + 1
         // newUser.id = userData[userData.length - 1].id + 1
         newUser.id = counter 
         userData.push(newUser)
